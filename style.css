@@ -1,0 +1,149 @@
+
+   body {
+       background-color:#000000;
+   }
+   a {
+       color:#ffffff;
+       
+   }
+   iframe {
+       border:0;
+   }
+   .illust {
+       width:100%;
+   }
+   .artflex {
+       display:flex;
+       flex-wrap:nowrap;
+       overflow-x:scroll;
+       height:80vh;
+       scroll-snap-type: x mandatory;
+       
+   }
+   section {
+    
+    scroll-snap-align: none center;
+   }    
+   .art {
+       width:80vw;
+       
+    scroll-snap-align: none center;
+   }
+   .on {
+       position:fixed;
+       top:20px;
+       left:20px;
+       color:#ffffff;
+       font-size:100px;
+       display:block;
+   }
+   .off {
+       position:fixed;
+       top:20px;
+       left:20px;
+       color:#ffffff;
+       font-size:100px;
+       display:none;
+   }
+    .pon {
+       position:fixed;
+       bottom:20px;
+       right:20px;
+       color:#ffffff;
+       font-size:100px;
+       display:block;
+   }
+   .poff {
+       position:fixed;
+       bottom:20px;
+       right:20px;
+       color:#ffffff;
+       font-size:100px;
+       display:none;
+   }
+   
+    .sidebar {
+        position:fixed;
+        top:0;
+        left:0;
+        color:#ffffff;
+        width:0vw;
+        height:100vh;
+        overflow:hidden;
+        transition:width 0.5s;
+    }
+    .sideframe {
+        color:#ffffff;
+        width:100%;
+        height:100%;
+    }
+    .contactbar {
+        position:fixed;
+        bottom:0;
+        left:0;
+        color:#ffffff;
+        width:100vw;
+        height:0vh;
+        overflow:hidden;
+        transition:height 0.5s;
+    }
+    .contactframe {
+        color:#ffffff;
+        width:100%;
+        height:100%;
+    }
+    input {
+      width:90%;
+      font-size:5vw;
+      font-family:arial;
+    }
+    textarea {
+      width:90%;
+      font-size:5vw;
+      font-family:arial;
+    }
+    .sidemenu {
+        color:#ffffff;
+        font-size:8vw;
+        font-family:arial;
+        width:100%;
+        height:100%;
+    }
+    .contactmenu {
+        color:#ffffff;
+        font-size:5vw;
+        font-family:arial;
+        width:100%;
+        height:100%;
+    }
+    
+    .stuff {
+        background-color:#000000;
+        color:#ffffff;
+        width:100vw;
+        height:95vh;
+    }
+    .header, .footer {
+        color:#ffffff;
+        text-align:center;
+    }
+    .title {
+        font-size:15vw;
+        font-family:arial;
+        
+    }
+    .subtitle {
+        font-size:4vw;
+        font-family:arial;
+        
+    }
+    
+    .content {
+        width:100%;
+        height:100%;
+        font-size:4vw;
+        font-family:arial;
+        text-align:justify;
+        color:#ffffff;
+    }
+

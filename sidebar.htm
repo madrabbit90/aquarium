@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="style.css">
+
+<script>
+
+function getTitle(url2) {
+  
+  const request = new XMLHttpRequest();
+  request.open("GET", url2, false); // `false` makes the request synchronous
+  request.send(null);
+
+  //return request.responseText;
+  
+  let parser = new DOMParser();
+  let doc = parser.parseFromString(request.responseText, 'text/html');
+   return doc.getElementById("title").innerHTML;
+  }
+
+function fileExists(url) {
+  var http = new XMLHttpRequest();
+  http.open('HEAD', url, false);
+  http.send();
+  return http.status != 404;
+}
+  
+</script>
+
+<div class="sidemenu" style="background-image: url('theme/sidesplash.jpg');background-size:auto 100%;text-shadow: 5px 5px 9px #000000;">
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p><u>Main Menu</u></p>
+    <script>
+
+const pagearr = []
+const pageheads = []
+var j=1
+
+while (fileExists("content/page"+j+".htm")==1) {
+  pagearr.push("page"+j)
+  //heads.push("Blog Entry #"+i) 
+  pageheads.push(getTitle("content/page"+j+".htm"))
+  j++;
+}
+document.write("<ul style='list-style-type: none;'>")
+j=j-1;
+while (j>0) {
+  document.write("<li><a style='text-decoration:none;' href='https://aquarium.static.domains?type=content&page="+pagearr[j-1]+"' target='_parent'>"+pageheads[j-1]+"</a></li>")
+  j=j-1
+}
+document.write("</ul>")
+
+</script>
+  
+  <!--todo test-->
+<p><u>Blog</u></p>
+<script>
+
+const arr = []
+const heads = []
+var i=1
+
+while (fileExists("blog/test"+i+".htm")==1) {
+  arr.push("test"+i)
+  //heads.push("Blog Entry #"+i) 
+  heads.push(getTitle("blog/test"+i+".htm"))
+  i++;
+}
+document.write("<ul style='list-style-type: none;'>")
+i=i-1;
+while (i>0) {
+  document.write("<li><a style='text-decoration:none;' href='https://aquarium.static.domains?type=blog&page="+arr[i-1]+"' target='_parent'>"+heads[i-1]+"</a></li>")
+  i=i-1
+}
+document.write("</ul>")
+
+</script>
+
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    
+</div>

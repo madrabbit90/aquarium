@@ -1,0 +1,80 @@
+<link rel="stylesheet" href="style.css">
+
+<script>
+
+function injectContent(url2) {
+  
+  const request = new XMLHttpRequest();
+  request.open("GET", url2, false); // `false` makes the request synchronous
+  request.send(null);
+
+  //return request.responseText;
+  
+  
+  return request.responseText;
+  }
+  
+  </script>
+
+<div class="header">
+    <img class="illust" src="theme/header.jpg">
+
+    
+    
+</div>
+<div class="container">
+    
+
+   <center> <div id="stuff" class="stuff">
+    
+        <div id="content" class="content" ></div>
+    
+
+    
+    </div></center>
+        
+    </div>
+    
+
+    <div id="sidebar" class="sidebar">
+            
+  
+        
+   <iframe class="sideframe" src="sidebar.htm"></iframe>
+   
+        
+        </div>
+        
+        <div id="contactbar" class="contactbar">
+              <iframe class="contactframe" src="contactbar.htm"></iframe> 
+        </div>
+
+
+<a id="on" class="on" style="text-shadow: 2px 2px 4px #000000;" onclick="document.getElementById('sidebar').style = 'width:50vw'; document.getElementById('on').style = 'display:none'; document.getElementById('off').style = 'display:block'">㊂</a>
+
+<a id="off" class="off" style="text-shadow: 2px 2px 4px #000000;" onclick="document.getElementById('sidebar').style = 'width:0vw'; document.getElementById('off').style = 'display:none'; document.getElementById('on').style = 'display:block'">㊂</a>
+
+
+<script>
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+var product = "home";
+product = urlParams.get('page');
+var type = "content";
+type = urlParams.get('type');
+if (product == null){
+    product = "page5"
+}
+if (type == null){
+    type = "content"
+}
+
+document.getElementById('content').
+innerHTML = "<div style='width:90%;padding:3%;' >"+injectContent(type+"/"+product+".htm")+"</div>"+injectContent("footer.htm");
+
+</script>
+
+<a id="pon" class="pon" style="text-shadow: 2px 2px 4px #000000;" onclick="document.getElementById('contactbar').style = 'height:50vh'; document.getElementById('pon').style = 'display:none'; document.getElementById('poff').style = 'display:block'">✉️</a>
+
+<a id="poff" class="poff" style="text-shadow: 2px 2px 4px #000000;" onclick="document.getElementById('contactbar').style = 'height:0vh'; document.getElementById('poff').style = 'display:none'; document.getElementById('pon').style = 'display:block'">✉️</a>
