@@ -1,0 +1,37 @@
+<title id="title">Projects</title>
+
+    <center><p><b>CRM Integrations</b></p></center>
+<p>While working for an insurance agency, we utilized an agency management system as well as an online CRM that ran our customer email campaigns. The CRM had a robust API for integrations, but our agency management system refused to integrate with anything, and tech support was useless.</p>
+
+<p>Manually running reports and uploading customer data was a bad compromise, so I poked around the system, reversed engineered the database files and wrote a series of scripts that converted them into usable XML formatted data that could be sent via REST API to the CRM. Email campaigns could now be triggered based on data entered by licensed agents and run for weeks without user input.</p>
+    <center><p><b>Auto-Signature</b></p></center>
+<p>In the same agency, the agents use standardized email signatures for all outgoing emails. This required building 4 signatures apiece, with two files for each signature (one for HTML and one for plain text), and having a technician sneak into their cubicle to copy and paste files while they were away for lunch.</p>
+
+<p>Among 8 agents, this amounted to 64 files to service whenever the signature was updated. There was always complaints and with plenty of room for human error, there was always human error.</p>
+
+<p>Tired of this, I wrote a signature system that kept signature templates in a separate folder and auto-generated the signature when the agent ran a script on their workstation depending on their logged-in username.</p>
+
+    <center><p><b>Sidewalk</b></p></center>
+    <img class="illust" src="images/sidewalk.jpg">
+<p>Not satisfied with current offerings, I wrote a Linux media center frontend to handle movies, TV shows and games for my family. It turned into a larger scale project that I hope to release as a consumer grade open-source package in the near future.</p>
+
+<p>It can create shortcuts with cover art, handle playlists, can scale to any screen size, is optimized for performance, and has parental locks, culminating in a complete package for those looking for something simpler for their media PC setup.</p>
+<p>Completely written in Python 3, Pygame and Bash.</p>
+    <center><p><b>Homebrew Development</b></p></center>
+    <img class="illust" src="images/homebrew.png">
+    <p>Back before and during the pandemic, I tried my hand at homebrew development for the Nintendo Game Boy. Written in C, I ported some of my favorite puzzle/board games to stay loose and challenge myself in writing for a different architecture and hardware as well as working within tighter memory constraints.</p>
+
+<p>I think they came out rather well. The links to the compiled roms are below.</p>
+
+<p>Dots and Boxes<br/>
+Lights Out<br/>
+Tic Tac Tiles (Lite 3)<br/>
+Total Eclipse (incomplete mobile port)</p>
+ <center><p><b>Monarch Handheld PC</b></p></center>
+    <img class="illust" src="images/monarch.jpg">
+
+<p>Before handheld x86 PCs became fashionable, I built a full-featured handheld Linux PC powered by a Raspberry Pi Zero.</p>
+
+<p>Its main feature was a pair of keypads on each side that served as main controls. Typing was done by key chords.</p>
+
+<p>All this was accomplished with a custom desktop environment running on TinyCore Linux, wiring the keypads directly to the GPIO and writing custom code to convert user input into ASCII keycodes.</p>
