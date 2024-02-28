@@ -17,15 +17,16 @@ input {
   display:block;
   font-family:arial;
    @media only screen and (orientation: portrait) {
-    font-size: 8vw;
+    font-size: 3vw;
   }
   @media only screen and (orientation: landscape) {
-    font-size: 3vw;
+    font-size: 8vw;
   }
 }
 .contact {
    @media only screen and (orientation: portrait) {
   width:94vw;
+  height:94vw;
   }
   @media only screen and (orientation: landscape) {
   width:64vw;
