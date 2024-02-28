@@ -40,7 +40,7 @@ function injectContent(url2) {
 </div>
 <img class="headerstrip" src="assets/header.jpg"/>
 
-<div class="content">
+<div class="content" id="content">
   
 </div>
 <div class="bottbar">
@@ -64,7 +64,7 @@ if (product == null){
 }
 
 document.getElementById('content').
-innerHTML = "<div style='width:90%;padding:3%;' >"+injectContent("content/"+product+".htm")+"</div>"+injectContent("footer.htm");
+innerHTML = injectContent("content/"+product+".htm");
 
 </script>
 
