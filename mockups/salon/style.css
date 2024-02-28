@@ -1,3 +1,19 @@
+.desklayout {
+  @media only screen and (orientation: portrait) {
+  display: none;
+  }
+  @media only screen and (orientation: landscape) {
+  display:block;
+  }
+}
+.content, .contact {
+  @media only screen and (orientation: portrait) {
+  display: block;
+  }
+  @media only screen and (orientation: landscape) {
+  display:none;
+  }
+}
 .mainbody {
   background-image:url("assets/curtain.jpg");
   background-size:auto 100%;
@@ -74,7 +90,7 @@ input {
   }
 
 }
-.content h1 {
+.content h1, .deskcontent h1 {
   color:#9B4E72;
   font-family: "Oswald", sans-serif;
   text-shadow: 2px 2px 5px white;
@@ -86,7 +102,7 @@ input {
   }
 
 }
-.content {
+.content, .deskcontent {
     text-align: justify;
     background-color: #B2B2B2;
     padding:3vw;
@@ -94,7 +110,7 @@ input {
   width:94vw;
   }
   @media only screen and (orientation: landscape) {
-  width:64vw;
+  width:60vw;
   }
 }
 .headerstrip {
