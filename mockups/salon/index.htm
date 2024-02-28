@@ -46,6 +46,16 @@ function injectContent(url2) {
 <div class="contact" id="contact">
     <iframe src="contact.htm"></iframe>
 </div>
+<table class="desklayout">
+ <tr>
+  <td class="deskcontent" id="deskcontent">
+
+  </td>
+  <td class="deskcontact" id="deskcontact">
+     <iframe src="contact.htm"></iframe>
+  </td>
+ </tr>
+</table>
 <div class="bottbar">
     <br/><br/>
   <center>
@@ -68,6 +78,9 @@ if (product == null){
 
 document.getElementById('content').
 innerHTML = injectContent("content/"+product+".htm")+"<h1 class='apptfoot'>Make an Appointment</h1>";
+
+document.getElementById('deskcontent').
+innerHTML = injectContent("content/"+product+".htm");
 
 </script>
 
