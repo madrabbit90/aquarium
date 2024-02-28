@@ -1,8 +1,9 @@
 .deskcontent {
-  width:60%
+  width:60%;
 }
 .deskcontact {
-  width:40%
+  width:40%;
+  height:100vh;
 }
 .desklayout {
   @media only screen and (orientation: portrait) {
