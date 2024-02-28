@@ -51,7 +51,7 @@ input {
     font-size: 3vw !important;
   }
   @media only screen and (orientation: landscape) {
-    font-size: 8vw !important;
+    font-size: 2vw !important;
   }
 }
 .contact {
