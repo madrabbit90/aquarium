@@ -41,7 +41,12 @@ iframe {
 }
 .google {
  width:80vw !important;
- height:60vw !important;
+    @media only screen and (orientation: portrait) {
+    height:60vw !important;
+  }
+  @media only screen and (orientation: landscape) {
+    height:120vw !important;
+  }
 }
 input {
   width:80%;
