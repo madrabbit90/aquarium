@@ -7,6 +7,12 @@ body {
 .navbuttons {
   font-family: "Oswald", sans-serif;
   text-shadow: 2px 2px 5px white;
+  @media only screen and (orientation: portrait) {
+    font-size: 6vw;
+  }
+  @media only screen and (orientation: landscape) {
+    font-size: 2vw;
+  }
 }
 .navbar {
     border-radius: 25px 25px 0 0;
