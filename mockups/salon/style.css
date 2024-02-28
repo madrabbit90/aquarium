@@ -20,8 +20,12 @@ input {
   }
 }
 .contact {
-  width:100vw;
-  height:50vw;
+   @media only screen and (orientation: portrait) {
+  width:94vw;
+  }
+  @media only screen and (orientation: landscape) {
+  width:64vw;
+  }
 }
 .navbuttons {
   font-family: "Oswald", sans-serif;
