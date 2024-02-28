@@ -102,16 +102,17 @@ input {
   }
 
 }
-.content, .deskcontent {
+.content {
     text-align: justify;
     background-color: #B2B2B2;
     padding:3vw;
-    @media only screen and (orientation: portrait) {
-  width:94vw;
-  }
-  @media only screen and (orientation: landscape) {
-  width:60vw;
-  }
+    width:94vw;
+}
+.deskcontent {
+    text-align: justify;
+    background-color: #B2B2B2;
+    padding:3vw;
+    width:64vw;
 }
 .headerstrip {
   width:100vw;
