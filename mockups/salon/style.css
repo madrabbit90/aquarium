@@ -45,7 +45,7 @@ iframe {
     height:60vw !important;
   }
   @media only screen and (orientation: landscape) {
-    height:160vw !important;
+    height:auto !important;
   }
 }
 input {
