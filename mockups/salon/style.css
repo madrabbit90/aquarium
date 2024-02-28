@@ -91,7 +91,7 @@ input {
   width:64vw;
   }
 }
-.content p {
+.content p, .bottbar p {
   color:#111111;
   font-family:arial;
    @media only screen and (orientation: portrait) {
