@@ -5,6 +5,7 @@
   margin:0;
 }
 .contactbody {
+  font-size:4vw;
   background-color: #B2B2B2;
   background-size:auto 100%;
   padding:0;
@@ -24,10 +25,10 @@ input {
   display:block;
   font-family:arial;
    @media only screen and (orientation: portrait) {
-    font-size: 3vw;
+    font-size: 3vw !important;
   }
   @media only screen and (orientation: landscape) {
-    font-size: 8vw;
+    font-size: 8vw !important;
   }
 }
 .contact {
