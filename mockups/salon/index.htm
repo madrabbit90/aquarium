@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+<body>
+  
+  <script>
+
+function injectContent(url2) {
+  
+  const request = new XMLHttpRequest();
+  request.open("GET", url2, false); // `false` makes the request synchronous
+  request.send(null);
+
+  //return request.responseText;
+  
+  
+  return request.responseText;
+  }
+  
+  </script>
+  
+<center>
+<div class="navbar">
+  
+  <span class="navbuttons">
+    Home
+    <span class="column"></span>
+    <span class="row">&nbsp;|&nbsp;</span>
+    Services
+    <span class="column"></span>
+    <span class="row">&nbsp;|&nbsp;</span>
+    About Us
+    <span class="column"></span>
+    <span class="row">&nbsp;|&nbsp;</span>
+    Appointment
+  </span>
+  
+</div>
+<img class="headerstrip" src="assets/header.jpg"/>
+
+<div class="content">
+  
+</div>
+<div class="bottbar">
+    <br/><br/>
+  <center>
+    <p class="newstext">Designed by Stephen Marlow<br/>
+    <a href="https://aquarium.static.domains">See My Portfolio</a></p>
+  </center<br/><br/>
+</div>
+<img class="logo" src="assets/logo.jpg"/>
+</center>
+
+<script>
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+var product = "home";
+product = urlParams.get('page');
+if (product == null){
+    product = "home"
+}
+
+document.getElementById('content').
+innerHTML = "<div style='width:90%;padding:3%;' >"+injectContent("content/"+product+".htm")+"</div>"+injectContent("footer.htm");
+
+</script>
+
+</body>

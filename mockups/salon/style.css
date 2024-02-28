@@ -1,0 +1,103 @@
+body {
+  background-image:url("assets/curtain.jpg");
+  background-size:auto 100%;
+  padding:0;
+  margin:0;
+}
+.navbuttons {
+  font-family: "Oswald", sans-serif;
+  text-shadow: 2px 2px 5px white;
+}
+.navbar {
+    border-radius: 25px 25px 0 0;
+    text-align: right;
+    background-color: #D92902;
+    color:#ffffff;
+    padding:3vw;
+    @media only screen and (orientation: portrait) {
+  width:94vw;
+  }
+  @media only screen and (orientation: landscape) {
+  width:64vw;
+  }
+}
+.content p {
+  color:#111111;
+  font-family:arial;
+   @media only screen and (orientation: portrait) {
+    font-size: 4vw;
+  }
+  @media only screen and (orientation: landscape) {
+    font-size: 1.5vw;
+  }
+
+}
+.content h1 {
+  color:#9B4E72;
+  font-family: "Oswald", sans-serif;
+  text-shadow: 2px 2px 5px white;
+   @media only screen and (orientation: portrait) {
+    font-size: 6vw;
+  }
+  @media only screen and (orientation: landscape) {
+    font-size: 2vw;
+  }
+
+}
+.content {
+    text-align: justify;
+    background-color: #B2B2B2;
+    padding:3vw;
+    @media only screen and (orientation: portrait) {
+  width:94vw;
+  }
+  @media only screen and (orientation: landscape) {
+  width:64vw;
+  }
+}
+.headerstrip {
+  width:100vw;
+  box-shadow: 6px 6px 5px black;
+}
+.column {
+  @media only screen and (orientation: portrait) {
+  display: block;
+  }
+  @media only screen and (orientation: landscape) {
+  display:none;
+  }
+}
+.row {
+  @media only screen and (orientation: portrait) {
+  display: none;
+  }
+  @media only screen and (orientation: landscape) {
+  display:inline-block;
+  }
+}
+.logo {
+  position:absolute;
+  top:0;
+  box-shadow: 10px 10px 5px black;
+
+    @media only screen and (orientation: portrait) {
+      left:14vw;
+      width:50vw;
+  }
+  @media only screen and (orientation: landscape) {
+    left:22vw;
+    width:20vw;
+  }
+}
+.bottbar {
+  border-radius: 0 0 25px 25px;
+  background-color: #D92902;
+  color:#ffffff;
+  padding:3vw;
+    @media only screen and (orientation: portrait) {
+  width:94vw;
+  }
+  @media only screen and (orientation: landscape) {
+  width:64vw;
+  }
+}
