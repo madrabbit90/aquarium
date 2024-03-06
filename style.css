@@ -5,7 +5,16 @@
        margin:0;
    }
    .rightbar {
-       width:100vw;
+          position:fixed;
+          top:0px;
+         @media only screen and (orientation: portrait) {
+          width:100vw;
+          left:0px;
+          }
+         @media only screen and (orientation: landscape) {
+           width:70vw;
+           left:30px;
+           }
    }
    a {
        color:#ffffff;
