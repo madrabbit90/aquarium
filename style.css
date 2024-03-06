@@ -12,10 +12,14 @@
          @media only screen and (orientation: portrait) {
           width:100vw;
           left:0px;
+          top:0px;
+          height:100vh;
           }
          @media only screen and (orientation: landscape) {
            width:70vw;
            left:30vw;
+           top:-10vh;
+           height:110vh;
            }
    }
    a {
