@@ -51,7 +51,12 @@
        left:20px;
        color:#ffffff;
        font-size:100px;
-       display:block;
+       @media only screen and (orientation: portrait) {
+          display:block;
+          }
+       @media only screen and (orientation: landscape) {
+           display:none;
+           }
    }
    .off {
        position:fixed;
@@ -67,7 +72,12 @@
        right:20px;
        color:#ffffff;
        font-size:100px;
-       display:block;
+       @media only screen and (orientation: portrait) {
+          display:block;
+          }
+       @media only screen and (orientation: landscape) {
+           display:none;
+           }
    }
    .poff {
        position:fixed;
