@@ -1,4 +1,19 @@
-
+   .mobhead {
+         @media only screen and (orientation: portrait) {
+          display:block;
+          }
+         @media only screen and (orientation: landscape) {
+           display:none;
+           }
+}
+.deskhead {
+         @media only screen and (orientation: portrait) {
+          display:none;
+          }
+         @media only screen and (orientation: landscape) {
+           display:block;
+           }
+}
    body {
        background-color:#000000;
        padding:0;
