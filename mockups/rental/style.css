@@ -1,0 +1,186 @@
+body {
+  margin:0;
+  padding:0;
+}
+.popcorn {
+    @media only screen and (orientation: landscape) {
+  position:absolute;
+  bottom: 0;
+}
+}
+.logo {
+  position:absolute;
+  @media only screen and (orientation: portrait) {
+  top:55vw;
+  left:5vw;
+  width:70vw;
+  }
+  @media only screen and (orientation: landscape) {
+    top:10vw;
+  left:5vw;
+  width:40vw;
+  }
+}
+.banner {
+  width:100%;
+}
+.deskbanner {
+    @media only screen and (orientation: portrait) {
+  display:none;
+  }
+    @media only screen and (orientation: landscape) {
+  display:block;
+  }
+}
+.topstrip {
+    @media only screen and (orientation: portrait) {
+  display:block;
+  }
+    @media only screen and (orientation: landscape) {
+  display:none;
+  }
+}
+.marquee {
+      @media only screen and (orientation: portrait) {
+  width: 60%;
+  }
+      @media only screen and (orientation: landscape) {
+  width:30%
+        
+      }
+}
+.on {
+  font-family: arial;
+  font-size: 10vw;
+  color: #000000;
+  position:fixed;
+  top: 5vw;
+  left: 5vw;
+  display: block;
+    @media only screen and (orientation: landscape) {
+      display: none;
+   }
+}
+.off {
+  font-family: arial;
+  font-size: 10vw;
+  color: #ffffff;
+  position:fixed;
+  top: 5vw;
+  left: 5vw;
+  display:none;
+      @media only screen and (orientation: landscape) {
+      display: none;
+   }
+}
+.lcurtain {
+  position: fixed;
+  left:0;
+  top:0;
+  height:100vh;
+  width:0vw;
+  transition:width 0.5s;
+}
+.rcurtain {
+  position: fixed;
+  right:0;
+  top:0;
+  height:100vh;
+  width:0vw;
+  transition:width 0.5s;
+}
+.mainmenu {
+  font-family: arial;
+  font-size: 10vw;
+  color: #ffffff;
+  position:fixed;
+  top: 115vh;
+  left: 2vw;
+  transition:top 1s;
+}
+.mainmenu ul li {
+  margin-bottom: 5vw;
+}
+ul {
+  list-style-type: none;
+}
+h1 {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+        @media only screen and (orientation: portrait) {
+  font-size:9vw;
+  }
+   @media only screen and (orientation: landscape) {
+  font-size:5vw;
+  }
+}
+p2, .deskmenu {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:#ffffff;
+  font-size:3vw;
+  display:block;
+        @media only screen and (orientation: portrait) {
+        display: none;
+}
+}
+p1 {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:#ffffff;
+  font-size:5vw;
+  display:block;
+      @media only screen and (orientation: landscape) {
+        display: none;
+}
+}
+p {
+  font-family: Arial;
+  font-size: 4vw;
+}
+.bottbar {
+  @media only screen and (orientation: portrait) {
+  background-image: url("assets/panel.jpg");
+  width:100vw;
+  position:relative;
+  height:auto;
+  }
+  @media only screen and (orientation: landscape) {
+  background-image: url("assets/lcurtain.jpg");
+  width:30vw;
+  height:100vh;
+  position:fixed;
+  top:0;
+  left:0
+  }
+}
+.mainslot {
+  @media only screen and (orientation: portrait) {
+  width:100vw;
+  position:relative;
+  height:auto;
+  }
+  @media only screen and (orientation: landscape) {
+  width:70vw;
+  height:100vh;
+  overflow-y:scroll;
+  position:fixed;
+  top:0;
+  left:30vw;
+  }
+}
+.mainslot p {
+    @media only screen and (orientation: landscape) {
+      display:none;
+}
+}
+.deskbottbar {
+  width:100%;
+  background-image: url("assets/panel.jpg");
+      @media only screen and (orientation: portrait) {
+      display:none;
+}
+}
