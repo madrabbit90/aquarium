@@ -202,4 +202,11 @@
               font-size:2vw;
            }
     }
-
+.shopitem {
+         @media only screen and (orientation: portrait) {
+          width:48%;
+          }
+         @media only screen and (orientation: landscape) {
+           width:23%;
+           }
+}
