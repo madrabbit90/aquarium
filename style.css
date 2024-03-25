@@ -204,9 +204,11 @@
     }
 .shopitem {
          @media only screen and (orientation: portrait) {
-          width:48%;
+          width:48vw;
+          height:48vw;
           }
          @media only screen and (orientation: landscape) {
-           width:23%;
+           width:23vw;
+           height:23vw;
            }
 }
