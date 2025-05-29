@@ -11,7 +11,7 @@ function injectContent(url2) {
   //return request.responseText;
   
   
-  return request.responseText.replace(/<meta[^>]*>/g, ''];
+  return request.responseText.replace(/meta/gi, 'a');
   }
   
   </script>
