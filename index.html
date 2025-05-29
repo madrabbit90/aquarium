@@ -72,7 +72,7 @@ if (type == null){
     type = "content"
 }
 
-var sharer = "<p>Share: <a href='https://madrabbit90.github.io/aquarium/"+type+"/"+product+".htm'>facebook</a></p>";
+var sharer = "<p>Share: <a href='https://www.facebook.com/sharer/sharer.php?u=https://madrabbit90.github.io/aquarium/"+type+"/"+product+".htm'>facebook</a></p>";
 
 document.getElementById('content').
 innerHTML = "<div style='width:90%;padding:3%;' >"+sharer+injectContent(type+"/"+product+".htm")+"</div>"+injectContent("footer.htm");
